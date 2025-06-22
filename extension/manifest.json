@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "Screener Transcript Helper",
+    "version": "1.2",
+    "description": "Adds a button to ask questions about PDF transcripts found on Screener.in.",
+  
+    "permissions": [
+      "storage"
+    ],
+  
+    "host_permissions": [
+      "https://*.screener.in/*"
+    ],
+  
+    "action": {
+      "default_popup": "popup.html"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["https://*.screener.in/*"],
+        "js": ["content.js"],
+        "run_at": "document_end"
+      }
+    ],
+  
+    "background": {
+      "service_worker": "background.js"
+    }
+  }

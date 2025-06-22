@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+requests
+PyMuPDF
+openai
+python-dotenv

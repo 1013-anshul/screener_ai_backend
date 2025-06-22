@@ -1,0 +1,15 @@
+# Python virtual environment
+env/
+venv/
+*.env
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Temporary files from your script
+temp.pdf
+
+# IDE / OS specific
+.vscode/
+.DS_Store
