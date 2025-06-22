@@ -166,7 +166,7 @@ let selectedTranscriptUrl = '';
 // Function to call the backend
 async function askBackend(question, pdfUrl) {
   try {
-    const response = await fetch("http://localhost:8000/ask", {
+    const response = await fetch("https://screener-ai-backend.vercel.app/ask", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ pdf_url: pdfUrl, question })
